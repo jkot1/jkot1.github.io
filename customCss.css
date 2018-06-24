@@ -2,7 +2,12 @@
 /*.navbar .navbard-brand {
 	font-size:5rem;
 }*/
-
+.btn{
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#topNav{
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .jumbotron{
 	background-image: url('background.jpg');
 	background-size: cover;
@@ -13,9 +18,7 @@
 	width: 100%;
 	height: 30rem;
 }
-.btn{
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 #info{
 	position: relative;
 	margin-top: -15rem;
