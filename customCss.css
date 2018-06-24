@@ -18,7 +18,6 @@
 	width: 100%;
 	height: 30rem;
 }
-
 #info{
 	position: relative;
 	margin-top: -15rem;
@@ -36,9 +35,35 @@ td{
 .info{
 	margin-bottom: 2rem;
 }
-.card{
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+.card {
+		position: relative;
+		border: none;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.front, .back {
+		position: absolute;
+		cursor: pointer;
+		//height: 100%;
+		//width: 100%;
+		//text-align: center;
+		//background: #C3C3C3;
+		//color: #3b3b3b;
+		transition: 1s;
+		backface-visibility: hidden;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.card .back {
+		transform: rotateY(180deg);
+	}
+	.card.show_info .back {
+		transform: rotateY(0deg);
+	}
+	.card.show_info .front {
+		transform: rotateY(-180deg);
+	}
+	.d-xs-none{
+		display: none;
+	}
 
 .hobbies{
 	text-align: right;

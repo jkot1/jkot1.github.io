@@ -9,7 +9,16 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="stylesheet" href="customCss.css">
+	<script>
+		$(document).ready(function() {
+			$('.card').click(function() {
+				$(this).toggleClass('show_info')
+			});
+		});
+	</script>
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -62,9 +71,9 @@
 				<hr>
 
 				<div class="col-md mb-5">
-					<p>My name is Jason Kotula, I am a recent graduate of Salisbury University with a major in Computer Science and a minor in Mathematics.</p> 
-					<p>I have experience working in both a team and individual enviornment, but prefer working as a team. I have worked primarly with C, C++, Java, HTML, PHP, Java Script, JQuery and Json. In the futrure I'd like to become a full stack developer.</p>
-					<p>In my free time I enjoy hanging out by the pool with my friends, going to the gym to play pick up basketball, and practicing coding.</p>
+					<p>My name is Jason Kotula, I am a positive, hardworking, and very determined individual that recently graduated from Salisbury University with a major in Computer Science and a minor in Mathematics.</p> 
+					<p>I am motivated and task-driven with the ability to work well in a group or an individual setting, but prefer working as a team. I have worked primarly with C, C++, Java, HTML, PHP, Java Script, JQuery and Json. In the futrure I'd like to become a full stack developer.</p>
+					<p>In my free time I enjoy hanging out by the pool with my friends, going to the gym to play pick up basketball, and practicing coding by working on several small and large scale projects. My most recent projects is called Storm Runners and it is an app to route around flooded roads in Ocean City, MD.</p>
 
 				</div>
 				<!--<div class="container my-5">
@@ -158,12 +167,27 @@
 
 		<!--<button type="button" onclick="window.open('file:///Users/jasonkotula/Documents/personalSite/resume.html#home', '_blank')"" class="btn btn-info btn-lg d-block mx-auto my-5" target="_blank" data-toggle="modal" data-target="resume">Link to Full Resume</button>-->
 		<!-- end call out -->
-
 		<!-- portfolio -->
 		<h1 class="display-4 text-center my-5 text-muted">Portfolio</h1>
 		<div class="row">
 			<div class="col-md-6 col-lg-4">
-				<div class="card mb-3">
+				<div class="card mb-3 d-xs-none d-sm-none d-md-none d-lg-flex">
+					<div class="front">
+						<img class="card-img-top" src="routingScreenShot.png" alt="card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Storm Runners</h4>
+							<p class="card-text">Storm Runners is a web based application designed to route users around flooded roads in Ocean City, Maryland. The available routes are calculated around statistical flood data in Ocean City depending on different storm intervals.</p>
+						</div>
+					</div>
+					<div class="back">
+						<img class="card-img-top" src="routingScreenShot.png" alt="card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Storm Runners</h4>
+							<p class="card-text">Storm Runners is a web based application designed to route users around flooded roads in Ocean City, Maryland. The available routes are calculated around statistical flood data in Ocean City depending on different storm intervals.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-3 d-xs-flex d-lg-none">
 					<img class="card-img-top" src="routingScreenShot.png" alt="card image cap">
 					<div class="card-body">
 						<h4 class="card-title">Storm Runners</h4>
@@ -171,17 +195,52 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="col-md-6 col-lg-4">
-				<div class="card mb-3">
+				<div class="card mb-3 d-xs-none d-sm-none d-md-none d-lg-flex">
+					<div class="front">
+						<img class="card-img-top" src="upe.png" alt="card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Salisbury UPE</h4>
+							<p class="card-text">UPE is an international honor society for the computing and information disciplines. This project is webiste built for Salisbury University's UPE society. It was created as a final project for a web development class.</p>
+						</div>
+					</div>
+					<div class="back">
+						<img class="card-img-top" src="upe.png" alt="card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Salisbury UPE</h4>
+							<p class="card-text">UPE is an international honor society for the computing and information disciplines. This project is webiste built for Salisbury University's UPE society. It was created as a final project for a web development class.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-3 d-xs-flex d-lg-none">
 					<img class="card-img-top" src="upe.png" alt="card image cap">
 					<div class="card-body">
 						<h4 class="card-title">Salisbury UPE</h4>
 						<p class="card-text">UPE is an international honor society for the computing and information disciplines. This project is webiste built for Salisbury University's UPE society. It was created as a final project for a web development class.</p>
 					</div>
 				</div>
+
 			</div>
+			
 			<div class="col-md-6 col-lg-4">
-				<div class="card mb-3">
+				<div class="card mb-3 d-xxs-none d-xs-none d-sm-none d-md-none d-lg-flex">
+					<div class="front">
+						<img class="card-img-top" src="screen.png" alt="card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Jason Kotula WordPress</h4>
+							<p class="card-text">Jason Kotula WordPress is a WordPress site built and designed to get practice building WordPress websites. Using the 2018 theme I built a personal webite to describe me as both an individual and a professional.</p>
+						</div>
+					</div>
+					<div class="back">
+						<img class="card-img-top" src="screen.png" alt="card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Jason Kotula WordPress</h4>
+							<p class="card-text">Jason Kotula WordPress is a WordPress site built and designed to get practice building WordPress websites. Using the 2018 theme I built a personal webite to describe me as both an individual and a professional.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-3 d-xs-flex d-lg-none">
 					<img class="card-img-top" src="screen.png" alt="card image cap">
 					<div class="card-body">
 						<h4 class="card-title">Jason Kotula WordPress</h4>
@@ -190,6 +249,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="d-xs-none d-sm-none d-md-none d-lg-block" style="margin-bottom: 30rem;"></div>
 		<!-- end portflio -->
 		
 		<!-- hobbies Someting wrong with divs here-->
