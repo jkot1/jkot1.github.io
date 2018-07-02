@@ -72,3 +72,8 @@ td{
 	margin-left: 2rem;
 	margin-bottom: 0;
 }
+button{
+	cursor: pointer;
+}
+
+
